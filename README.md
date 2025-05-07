@@ -3,6 +3,10 @@
 This is a Next.js-based ecommerce application template integrated with Sanity for content management, Clerk for authentication, Stripe for payments, and Sendbird for chat functionality.
 Follow the steps below to set up and customize the application.
 
+## 🔗 Preview
+
+## ![Dashboard Preview](/public/preview_image.png)
+
 ## Getting started
 
 To set up the Tulos Ecommerce Application, follow these steps carefully:
