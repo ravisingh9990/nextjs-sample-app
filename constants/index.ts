@@ -9,11 +9,11 @@ export const headerData = [
 ];
 
 export const productType = [
-  { title: "Tshirt", value: "tshirt" },
-  { title: "Jacket", value: "jacket" },
-  { title: "Pants", value: "pants" },
-  { title: "Hoodie", value: "hoodie" },
-  { title: "Short", value: "tshirt" },
+  { title: "Amla powder", value: "shikakai" },
+  { title: "Aritha powder", value: "aritha powder" },
+  { title: "Beetroot powder", value: "beetroot powder" },
+  { title: "Neem powder", value: "neem powder" },
+  { title: "Hibiscus powder", value: "hibiscus powder" },
 ];
 
 export const quickLinksData = [
@@ -24,13 +24,13 @@ export const quickLinksData = [
   { title: "FAQs", href: "/faqs" },
 ];
 export const categoriesData = [
-  { title: "Men's Fashion", href: "/men-s-fashion" },
-  { title: "Women's Fashion", href: "/women" },
-  { title: "Kids corner", href: "/kids" },
-  { title: "Tshirt", href: "/t-shirt" },
-  { title: "Accessories", href: "/accessories" },
-  { title: "Household", href: "/household" },
-  { title: "Others", href: "/others" },
+  { title: "Hair Care", href: "/haircare" },
+  { title: "Skin Care", href: "/skincare" },
+  // { title: "Kids corner", href: "/kids" },
+  // { title: "Tshirt", href: "/t-shirt" },
+  // { title: "Accessories", href: "/accessories" },
+  // { title: "Household", href: "/household" },
+  // { title: "Others", href: "/others" },
 ];
 export const faqsData = [
   {

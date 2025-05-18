@@ -12,8 +12,10 @@ import { Loader2 } from "lucide-react";
 const ProductGrid = () => {
   const [products, setProducts] = useState<PRODUCTS_QUERYResult>([]);
   const [loading, setLoading] = useState(false);
-  const [selectedTab, setSelectedTab] = useState(productType[0]?.title || "");
-  const query = `*[_type == "product" && variant == $variant] | order(name asc)`;
+  // const [selectedTab, setSelectedTab] = useState(productType[0]?.title || "");
+  const [selectedTab, setSelectedTab] = useState(productType[0]?.value || "");
+  // const query = `*[_type == "product" && variant == $variant] | order(name asc)`;
+  const query = `*[_type == "product" ] | order(name asc)`;
   const params = { variant: selectedTab.toLowerCase() };
 
   useEffect(() => {
