@@ -8,6 +8,7 @@ import HomeTabbar from "./new/HomeTabbar";
 import { productType } from "@/constants";
 import NoProductAvailable from "./new/NoProductAvailable";
 import { Loader2 } from "lucide-react";
+import { useMemo } from "react";
 
 const ProductGrid = () => {
   const [products, setProducts] = useState<PRODUCTS_QUERYResult>([]);
@@ -16,7 +17,8 @@ const ProductGrid = () => {
   const [selectedTab, setSelectedTab] = useState(productType[0]?.value || "");
   // const query = `*[_type == "product" && variant == $variant] | order(name asc)`;
   const query = `*[_type == "product" ] | order(name asc)`;
-  const params = { variant: selectedTab.toLowerCase() };
+  // const params = { variant: selectedTab.toLowerCase() };
+  const params = useMemo(() => ({ variant: selectedTab.toLowerCase() }), [selectedTab]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +33,7 @@ const ProductGrid = () => {
       }
     };
     fetchData();
-  }, [selectedTab]);
+  }, [selectedTab, query, params]);
 
   return (
     <div className="mt-10 flex flex-col items-center">
