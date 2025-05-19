@@ -27,6 +27,7 @@
     "@sanity/preview-url-secret": "^2.1.10",
     "@sanity/vision": "3",
     "@types/lodash": "^4.17.16",
+    "@vercel/speed-insights": "^1.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.1.1",
