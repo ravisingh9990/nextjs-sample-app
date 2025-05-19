@@ -1,15 +1,28 @@
-import type { NextConfig } from "next";
+// import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+// const nextConfig: NextConfig = {
+//   /* config options here */
+//   images: {
+//     remotePatterns: [
+//       {
+//         protocol: "https",
+//         hostname: "cdn.sanity.io",
+//       },
+//     ],
+//   },
+// };
+
+// export default nextConfig;
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  experimental: {
+    serverActions: true,
+  },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
-      },
-    ],
+    domains: ['cdn.sanity.io'], // REQUIRED for Sanity images to load
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
