@@ -9,7 +9,7 @@ export const headerData = [
 ];
 
 export const productType = [
-  { title: "Amla powder", value: "shikakai" },
+  { title: "Amla powder", value: "amla powder" },
   { title: "Aritha powder", value: "aritha powder" },
   { title: "Beetroot powder", value: "beetroot powder" },
   { title: "Neem powder", value: "neem powder" },

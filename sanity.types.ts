@@ -163,7 +163,7 @@ export type Product = {
   }>;
   stock?: number;
   status?: "new" | "hot" | "sale";
-  variant?: "amla powder" | "shikakai" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
+  variant?: "amla powder" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
 };
 
 export type Category = {
@@ -320,7 +320,8 @@ export type PRODUCTS_QUERYResult = Array<{
   }>;
   stock?: number;
   status?: "hot" | "new" | "sale";
-  variant?: "amla powder" | "shikakai" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
+  variant?: "amla powder" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
+  // important product definition main products 
 }>;
 // Variable: CATEGORIES_QUERY
 // Query: *[_type=="category"] | order(name asc)
