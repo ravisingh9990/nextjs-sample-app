@@ -381,7 +381,7 @@ export type PRODUCT_SEARCH_QUERYResult = Array<{
   }>;
   stock?: number;
   status?: "hot" | "new" | "sale";
-  variant?: "amla powder" | "shikakai" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
+  variant?: "amla powder" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
 }>;
 // Variable: PRODUCT_BY_ID_QUERY
 // Query: *[_type == "product" && slug.current == $slug] | order(name asc) [0]
@@ -418,7 +418,7 @@ export type PRODUCT_BY_ID_QUERYResult = {
   }>;
   stock?: number;
   status?: "hot" | "new" | "sale";
-  variant?: "amla powder" | "shikakai" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
+  variant?: "amla powder" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
 } | null;
 // Variable: PRODUCT_BY_CATEGORY_QUERY
 // Query: *[_type == 'product' && references(*[_type == "category" && slug.current == $categorySlug]._id)] | order(name asc)
@@ -455,7 +455,7 @@ export type PRODUCT_BY_CATEGORY_QUERYResult = Array<{
   }>;
   stock?: number;
   status?: "hot" | "new" | "sale";
-  variant?: "amla powder" | "shikakai" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
+  variant?: "amla powder" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
 }>;
 // Variable: SALE_QUERY
 // Query: *[_type == 'sale'] | order(name asc)
@@ -539,7 +539,7 @@ export type MY_ORDERS_QUERYResult = Array<{
       }>;
       stock?: number;
       status?: "hot" | "new" | "sale";
-      variant?: "amla powder" | "shikakai" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
+      variant?: "amla powder" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
     } | null;
     quantity?: number;
     _key: string;
@@ -606,7 +606,7 @@ export type QueryResult = Array<{
       }>;
       stock?: number;
       status?: "hot" | "new" | "sale";
-      variant?: "amla powder" | "shikakai" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
+      variant?: "amla powder" | "aritha powder" | "beetroot powder" | "neem powder" | "hibiscus powder";
     } | null;
     quantity?: number;
     _key: string;
